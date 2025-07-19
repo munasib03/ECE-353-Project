@@ -1,6 +1,6 @@
 /**
  * @file spi.c
- * @author M Sadman Sakib (msakib@wisc.edu)
+ * @author
  * @brief 
  * @version 0.1
  * @date 2023-09-01
