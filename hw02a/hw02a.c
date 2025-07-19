@@ -1,6 +1,6 @@
 /**
  * @file hw01a.c
- * @author M Sadman Sakib, Amer Salem
+ * @author
  * @brief
  * @version 0.1
  * @date 2024-01-08
