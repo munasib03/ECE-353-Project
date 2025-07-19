@@ -1,6 +1,6 @@
 /**
  * @file ice05.c
- * @author M Sadman Sakib (msakib@wisc.edu)
+ * @author
  * @brief
  * @version 0.1
  * @date 2023-08-25
