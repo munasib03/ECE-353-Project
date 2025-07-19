@@ -1,0 +1,97 @@
+{
+    "version": 4,
+    "env": {
+        "mtbCompilerArgs": [
+            "-c",
+            "-mcpu=cortex-m4",
+            "--specs=nano.specs",
+            "-Og",
+            "-mfloat-abi=softfp",
+            "-mfpu=fpv4-sp-d16",
+            "-mthumb",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-ffat-lto-objects",
+            "-g",
+            "-Wall"
+        ],
+        "mtbDefaultIncludePath": [
+            ".",
+            "./drivers",
+            "./hw01",
+            "./libs",
+            "./libs/TARGET_ECE353-BSP",
+            "./libs/TARGET_ECE353-BSP/COMPONENT_BSP_DESIGN_MODUS",
+            "./libs/TARGET_ECE353-BSP/COMPONENT_BSP_DESIGN_MODUS/GeneratedSource",
+            "../mtb_shared/capsense/release-v3.0.1",
+            "../mtb_shared/core-lib/release-v1.4.1",
+            "../mtb_shared/core-lib/release-v1.4.1/include",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/COMPONENT_CAT1A",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/COMPONENT_CAT1A/include",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/COMPONENT_CAT1A/include/pin_packages",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/COMPONENT_CAT1A/include/triggers",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/include",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/include_pvt",
+            "../mtb_shared/mtb-hal-cat1/release-v2.2.0/source",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/cmsis",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/cmsis/include",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/devices",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/devices/COMPONENT_CAT1A",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/devices/COMPONENT_CAT1A/include",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/devices/COMPONENT_CAT1A/include/ip",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/drivers",
+            "../mtb_shared/mtb-pdl-cat1/release-v2.4.1/drivers/include",
+            "../mtb_shared/retarget-io/release-v1.5.0",
+            "${config:modustoolbox.toolsPath}/gcc/lib/gcc/arm-none-eabi/10.3.1/include",
+            "${config:modustoolbox.toolsPath}/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/fpv4-sp/softfp",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1/backward"
+        ],
+        "mtbDefaultDefines": [
+            "CY_USING_HAL",
+            "CY_APPNAME_ece353_mtb_init_app",
+            "CY8C6244AZI_S4D93",
+            "CY_TARGET_DEVICE=CY8C6244AZI_S4D93",
+            "TARGET_ECE353_BSP",
+            "CY_TARGET_BOARD=ECE353_BSP",
+            "COMPONENT_BSP_DESIGN_MODUS",
+            "COMPONENT_CAT1",
+            "COMPONENT_CAT1A",
+            "COMPONENT_CM0P_SLEEP",
+            "COMPONENT_CM4",
+            "COMPONENT_ECE353_BSP",
+            "COMPONENT_PSOC6HAL",
+            "COMPONENT_SOFTFP",
+            "DEBUG",
+            "CY_SUPPORTS_DEVICE_VALIDATION",
+            "__GNUC__"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "MTB",
+            "compilerPath": "${config:modustoolbox.toolsPath}/gcc/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "${mtbCompilerArgs}"
+            ],
+            "compileCommands": "./build/compile_commands.json",
+            "intelliSenseMode": "gcc-x86",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "includePath": [
+                "${mtbDefaultIncludePath}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "defines": [
+                "${mtbDefaultDefines}"
+            ]
+        }
+    ]
+}
