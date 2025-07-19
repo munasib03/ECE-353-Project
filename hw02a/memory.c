@@ -1,6 +1,6 @@
 /**
  * @file memory.c
- * @author M Sadman Sakib, Amer Salem
+ * @author 
  * @brief
  * @version 0.1
  * @date 2024-03-08
